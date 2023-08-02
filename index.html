@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color:#1a64d6;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+      }
+      h2 {
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 400;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: 200ms;
+        max-width: 400px;
+        margin: 0 auto;
+        font-size: 18px;
+        transition-timing-function: all 200ms cubic-bezier(0.4, 0, 1, 1);
+      }
+p { 
+    font-size: 18px; 
+    opacity: 0.7;
+    text-align: center;
+    font-family: monospace;
+
+}
+h3 { 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+button {
+ display: block;
+ margin: 20px auto;
+ border: 1px solid #1a64d6;
+ background: #1a64d6;
+ color: white;
+ font-size: 16px;
+ line-height: 22px;
+ padding: 16px 24px;
+ border-radius: 30px;
+ transition: all 200ms ease-in-out;
+ box-shadow: rgb(37,39,89,0.08) 0px 8px 8px 0;
+
+}
+button:hover { 
+background: white;
+color: #1a64d6;
+cursor: pointer;
+}
+
+ul {
+    padding: 0;
+}
+div {
+    display: block;
+}
+body {
+    display: block;
+    margin: 8px;
+    padding: 0%;
+    border-radius: 10px;
+}
+
+
+li:hover {
+    background: #fffbef;
+}
+
+.creator {
+    font-size: 18px; 
+    opacity: 0.7;
+    text-align: center;
+    font-family: monospace;
+}
+    </style>
+
+  </head>
+  <body>
+    <div class="html-css">
+    <h1>
+      🌤
+      <br>
+      Currently 21° in Tokyo</h1>
+    <h2>13° <strong>/ 23°<strong></h2>
+        <ul>
+            <li>
+    <h3>🌧Tomorrow</h3>
+    <P>10°/
+        <strong>22°</strong>
+    </P>
+</li>
+<li>
+    <h3>🌥 Saturday</h3>
+    <P>15°/
+        <strong> 17°</strong>
+    </P>
+</li>
+<li>
+    <h3> ☀️ Sunday</h3>
+    <P>25°/<strong>
+        28°</strong></P>
+</li>
+        </ul>
+    <button>Change City</button>
+    <div class="creator"> Coded by Denise Kiese </div>
+    <script>
+        
+function changeCity() {
+    let city = prompt("what city do you live in");
+    let temperature = prompt("what temperature is it");
+    let heading = document.querySelector("h1");
+    if (temperature < 0) {
+
+heading.innerHTML = 
+"☹️<br />Currently " + temperature + "°c in " +  city;
+} else {
+    heading.innerHTML = 
+    " 😄 <br />Currently " + temperture + "°c in mm" +  city;
+}
+}
+let changeButton = document.querySelector("button");
+changeButton.addEventListener("click", changeCity);
+
+    </script>
+    </div>
+  </body>
+</html>
