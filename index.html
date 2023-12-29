@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-   
+    <link rel ="stylesheet" type="text/css" href="style.css">
 
   </head>
   <body>
@@ -36,25 +36,9 @@
         </ul>
     <button>Change City</button>
     <div class="creator"> Coded by Denise Kiese </div>
-    <script>
         
-function changeCity() {
-    let city = prompt("what city do you live in");
-    let temperature = prompt("what temperature is it");
-    let heading = document.querySelector("h1");
-    if (temperature < 0) {
 
-heading.innerHTML = 
-"☹️<br />Currently " + temperature + "°c in " +  city;
-} else {
-    heading.innerHTML = 
-    " 😄 <br />Currently " + temperture + "°c in mm" +  city;
-}
-}
-let changeButton = document.querySelector("button");
-changeButton.addEventListener("click", changeCity);
-
-    </script>
+    <script src =index.js></script>
     </div>
   </body>
 </html>
